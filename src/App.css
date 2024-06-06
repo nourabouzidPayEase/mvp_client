@@ -1,0 +1,241 @@
+.wrapper {
+  height: 100dvh;
+  width: 26%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.car-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  max-width: 400px;
+  width: 100%;
+  margin: 20px;
+}
+
+.car-container:hover {
+  transform: scale(1.05);
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+}
+
+.total-price {
+  padding: 20px;
+  background: #f8f8f8;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-top: 1px solid #e0e0e0;
+}
+
+.assurance-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.assurance-option {
+  background: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.assurance-option.selected {
+  background: #cce5ff;
+  border: 2px solid #007bff;
+}
+
+.upload .text-sm {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+
+.main {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 16px 0px;
+  height: 100%;
+}
+
+.carousel {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner .item {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+#header {
+  height: 22%;
+  background-color: #0655FA;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+#header h2,
+p {
+  margin: 0px;
+}
+
+#header p {
+  color: rgb(235, 235, 235);
+}
+
+#divider {
+  height: 13px;
+  width: 100%;
+  background: #E2F2D7;
+}
+
+label {
+  font-size: 15px;
+  color: black;
+  font-weight: 500;
+  display: block;
+  padding: 7px 5px;
+}
+
+.margin {
+  padding: 5px 10px;
+}
+
+.form {
+  height: 78%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.date .select-button {
+  width: 100%;
+  background: transparent;
+  padding: 8px;
+  border: 2px solid lightgrey;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date .date-picker {
+  position: absolute;
+  left: 15%;
+  z-index: 2;
+}
+
+.date #pickUp,
+#return {
+  position: relative;
+}
+
+.age {
+  margin-right: 20px;
+}
+
+input,
+select {
+  width: 97%;
+  background: transparent;
+  padding: 10px 8px;
+  border: 2px solid lightgrey;
+  border-radius: 6px;
+}
+
+.btns {
+  background: white;
+  padding: 10% 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns button {
+  background: #727272;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  border-radius: 200px
+}
+
+.btns button:hover {
+  background-color: #5a5a5a;
+}
+
+.btns .next {
+  background-color: #0655FA;
+  margin-left: auto;
+}
+
+.btns .next:hover {
+  background-color: #0043c0;
+}
+button:disabled{
+  opacity: 0.5;
+}
+
+
+@media screen and (max-width: 450px) {
+  .wrapper {
+    width: 100%;
+  }
+  .main{
+    border-radius: 0px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .wrapper {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .wrapper {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  .wrapper {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .wrapper {
+    width: 30%;
+  }
+}
